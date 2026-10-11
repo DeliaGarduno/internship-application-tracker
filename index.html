@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Internship Application Tracker</title>
+    </head>
+    <body>
+        <main>
+            <h1>Internship Application Tracker</h1>
+            <p>Track and organize your software engineering internship applications</p>
+            <section>
+                <h2>Add Application</h2>
+                <form id="application-form">
+                    <label for="company">Company</label>
+                    <input type="text" id="company">
+                    <label for="position">Position</label>
+                    <input type="text" id="position">
+                    <label for="date">Application Date</label>
+                    <input type="date" id="date">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="applied">Applied</option>
+                        <option value="interview">Interview</option>
+                        <option value="offer">Offer</option>
+                        <option value="rejected">Rejected</option>
+                    </select>
+                    <button type="submit">Add Application</button>
+                    <p id="error-message"></p>
+                </form>
+            </section>
+            <section>
+                <h2>My applications</h2>
+                <ul id="application-list">
+
+                </ul>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
